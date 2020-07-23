@@ -1,13 +1,69 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+
+  min-height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.users-box,
+.chat-box {
+  height: 550px;
+  overflow-y: scroll;
+}
+
+.avatar {
+  background-color: aquamarine;
+  padding: 0.7em;
+}
+input::placeholder {
+  font-size: 0.9rem;
+  color: #999;
+}
+.message-form {
+  justify-content: flex-end;
+}
+
+/* .chat-box.chat-box.chat-box {
+  position: relative;
+  bottom: 0;
+  height: 100%;
+} */
+
+.sender-avatar,
+.receiver-avatar {
+  background-color: aquamarine;
+  padding: 0.9em;
+}
+.receiver-avatar {
+  background-color: #9face6;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 567px) {
+  .users-box {
+    height: 225px;
+    border-bottom: #999 1px;
+  }
+  .chat-container {
+    height: 400px !important;
+    overflow-y: scroll;
+    align-content: center;
+  }
+  .chat-info {
+    align-content: center;
+  }
+}
+.app-theme {
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
 }
